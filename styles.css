@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    background-image: url('background/default.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    transition: background-image 0.5s linear;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(58, 58, 58,0.5);
+    color:white;
+    width: 50vw;
+    border-radius: 15px;
+    
+    
+}
+.container-fluid header{
+    font-size: 3vw; /*30px*/
+    background-color: rgba(58, 58, 58,1);
+    width: inherit;
+    height: 4vw;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+.container-fluid .search{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-fluid .search #searchbar{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 6vh;
+    border: none;
+    padding: 15px;
+    background-color:rgba(233, 233, 233, 0.5) ;
+    width: 25vw;
+   
+}
+.container-fluid .search #searchbar::placeholder{
+    color: rgba(58, 58, 58,1);
+    font-size: 4vh;
+}
+.container-fluid .search #searchbutton{
+    height: 6vh;
+    width: 5vh;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 15px;
+   
+}
+#searchbutton i{
+    color:white;
+   
+    
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon img{
+    width: 10vw;
+    height: 10vw;
+}
+#temp{
+    
+    font-size: 7vw;
+    text-shadow: 5px 5px black;
+}
+#desc{
+    font-style: italic;
+    font-size: 1.8vw;
+}
+#date,#location,#low-high,#locationbtn{
+    font-size: 1.8vw;
+}
+#locationbtn{
+    margin: 3vh 0;
+   
+}
+
+/* media queries */
+
+@media (max-width:1200px) {
+    .container-fluid{ 
+        width: 50vw;  
+    }
+    .container-fluid .search #searchbar {
+        width: 40vw;
+        
+    }
+    
+    .container-fluid .search #searchbutton{
+        height: 6vh;
+        width: 5vh;  
+    }
+    .container-fluid .search #searchbar::placeholder{
+        
+        font-size: 3vh;
+    }
+   
+}
+@media (max-width:500px) {
+    .container-fluid{ 
+        width: 90vw;  
+    }
+    .container-fluid header{
+        font-size: 8vh;
+       height: 10vh;
+    }
+   
+    .container-fluid .search #searchbar {
+        width: 75vw;
+        
+    }
+    
+    .container-fluid .search #searchbutton{
+        height: 6vh;
+    width: 5vh; 
+    }
+    .container-fluid .search #searchbar::placeholder{
+        
+        font-size: 5vh;
+    }
+   
+    .icon img{
+        width: 85px;
+        height: 85px;
+    }
+    #temp{   
+        font-size: 20vw;
+    }
+    #desc,#date,#location,#low-high,#locationbtn{
+        font-size: 5vw;
+    }
+    
+
+}
+
+@media (max-width:250px) {
+
+    .container-fluid{ 
+        width: 100vw;  
+    }
+    .container-fluid header{
+        font-size: 8vh;
+       height: 10vh;
+    }
+   
+    .container-fluid .search #searchbar {
+        width: 75vw;
+        
+    }
+    
+    .container-fluid .search #searchbutton{
+        height: 6vh;
+    width: 5vh; 
+    }
+    .container-fluid .search #searchbar::placeholder{
+        
+        font-size: 5vh;
+    }
+   
+    .icon img{
+        width: 75px;
+        height: 75px;
+    }
+    #temp{   
+        font-size: 25vw;
+    }
+    #desc,#date,#location,#low-high,#locationbtn{
+        font-size: 8vw;
+    }
+    
+
+}
