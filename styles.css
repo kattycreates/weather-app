@@ -137,7 +137,7 @@ body{
    
     .container-fluid .search #searchbar {
         width: 75vw;
-        
+        font-size:15px;
     }
     
     .container-fluid .search #searchbutton{
@@ -175,7 +175,7 @@ body{
    
     .container-fluid .search #searchbar {
         width: 75vw;
-        
+        font-size:13px;
     }
     
     .container-fluid .search #searchbutton{
