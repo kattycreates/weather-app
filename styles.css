@@ -146,7 +146,7 @@ body{
     }
     .container-fluid .search #searchbar::placeholder{
         
-        font-size: 5vh;
+        font-size: 15px;
     }
    
     .icon img{
@@ -184,7 +184,7 @@ body{
     }
     .container-fluid .search #searchbar::placeholder{
         
-        font-size: 5vh;
+        font-size: 13px;
     }
    
     .icon img{
